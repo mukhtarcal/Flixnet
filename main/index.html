@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/main/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jockey+One&display=swap" rel="stylesheet">
+    <title>Flixnet</title>
+  </head>
+  <body>
+    <a href="/main/index.html" class="logo"><img src ="/images/FLIXNETlogo.png"></a>
+    <img id="background-light" src="/images/Vector-background.png">
+    <div class="search">
+      <!-- <a href="/search/index.html"> -->
+        <button id="search-icon" type="submit"><img src="/images/Search-icon.png"/></button>
+      <!-- </a> -->
+      <input id="search-text" type="text" placeholder="Search movies..."/>
+    </div>
+
+    <div id="movie-of-the-day-container">
+      <!-- movie of the day gotten from javascript -->
+    </div>
+    
+    <div class="parent">
+
+      <div class="popular-movies">
+        <div class="popular">Popular</div>
+        <div class="movies-container-wrapper">
+          <div id="popular-movies-container">
+            <!-- Where all the popular movie cards go into, can fit 6 movies -->
+          </div>
+        </div>
+      </div>
+    
+      <div class="genre-movies">
+        <div class="genre">By Genre</div>
+        <nav class="genre-bar">
+          <button id="action">Action</button>
+          <button id="comedy">Comedy</button>
+          <button id="drama">Drama</button>
+          <button id="romance">Romance</button>
+          <button id="adventure">Adventure</button>
+          <button id="mystery">Mystery</button>
+          <div class="animation start-action"></div>
+        </nav>
+        <div id="genre-movies-container">
+          <!-- Where all the genre movie cards go into, can fit 6 movies -->
+        </div> 
+      </div>
+    
+    </div>
+
+  <script src="/main/script.js"></script>
+  <script src="/script.js"></script>
+  </body>
+</html>

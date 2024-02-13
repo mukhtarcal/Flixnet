@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/movie/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jockey+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a href="/main/index.html" class="logo"><img src ="/images/FLIXNETlogo.png"></a>
+    <img id="background-light" src="/images/Vector-background.png">
+    <div class="search">
+      <button id="search-icon" type="submit"><img src="/images/Search-icon.png"/></button>
+      <input id="search-text" type="text" placeholder="Search movies..."/>
+    </div>
+
+    <div id="selected-movie-container">
+
+    <!-- example
+    <button class="movie">
+      <img class="movie-img" src="/images/movie-of-the-day.png">
+      <div class="movie-info">
+        <div id="movie-title">Movie Title</div>
+        <p>
+          <span class="director">Director Name<br /></span> 
+          <span class="release-date">Release Date</span>
+        </p>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. 
+          Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. 
+          Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+          Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. 
+          Pellentesque commodo lacus at sodales sodales.
+          Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. 
+          Praesent lorem.
+        </p>
+        <div class="cast">Cast:</div>
+        <p id="cast">
+          Lorem ipsum, dolor sit, amet consectetur, adipiscing elit Ut, et massa mi, Aliquam in hendrerit urna, 
+          Pellentesque sit amet, sapien fringilla, mattis ligula, consectetur, ultrices mauris 
+        </p>
+      </div>
+    </button>
+    -->
+
+    </div>
+
+    <div class="related-movies">
+      <div class="related">Related</div>
+      <div class="related-movie-cards" id="related-movie-cards">
+          <!-- Where all the related movie cards go into, can fit * movies -->
+
+          <!-- example
+          <a href="/movie/index.html"  style="text-decoration:none">
+            <button class="movie-card">
+              <img class="movie-img" src="/images/example-poster.png">
+              <div class="movie-title">Movie Title</div>
+              <p class="movie-info">
+                <span class="director">Director Name<br /></span> 
+                <span class="release-date">Release Date</span>
+              </p>
+            </button>
+          </a>
+          <a href="/movie/index.html"  style="text-decoration:none">
+            <button class="movie-card">
+              <img class="movie-img" src="/images/example-poster.png">
+              <div class="movie-title">Movie Title</div>
+              <p class="movie-info">
+                <span class="director">Director Name<br /></span> 
+                <span class="release-date">Release Date</span>
+              </p>
+            </button>
+          </a>
+          <a href="/movie/index.html"  style="text-decoration:none">
+            <button class="movie-card">
+              <img class="movie-img" src="/images/example-poster.png">
+              <div class="movie-title">Movie Title</div>
+              <p class="movie-info">
+                <span class="director">Director Name<br /></span> 
+                <span class="release-date">Release Date</span>
+              </p>
+            </button>
+          </a>
+          <a href="/movie/index.html"  style="text-decoration:none">
+            <button class="movie-card">
+              <img class="movie-img" src="/images/example-poster.png">
+              <div class="movie-title">Movie Title</div>
+              <p class="movie-info">
+                <span class="director">Director Name<br /></span> 
+                <span class="release-date">Release Date</span>
+              </p>
+            </button>
+          </a>
+          <a href="/movie/index.html"  style="text-decoration:none">
+            <button class="movie-card">
+              <img class="movie-img" src="/images/example-poster.png">
+              <div class="movie-title">Movie Title</div>
+              <p class="movie-info">
+                <span class="director">Director Name<br /></span> 
+                <span class="release-date">Release Date</span>
+              </p>
+            </button>
+          </a>
+          <a href="/movie/index.html"  style="text-decoration:none">
+            <button class="movie-card">
+              <img class="movie-img" src="/images/example-poster.png">
+              <div class="movie-title">Movie Title</div>
+              <p class="movie-info">
+                <span class="director">Director Name<br /></span> 
+                <span class="release-date">Release Date</span>
+              </p>
+            </button>
+          </a>
+          -->
+          
+      </div>
+    </div>
+
+  <script src="/movie/script.js"></script>
+  <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cheerio"></script>
+  </body>
+</html>

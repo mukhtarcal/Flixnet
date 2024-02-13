@@ -1,0 +1,349 @@
+body {
+    background: linear-gradient(to bottom, rgb(26.8, 33.4, 40.6) 0%, rgb(37.37, 12.36, 43.62) 100%);
+    height: 100vh;
+    /*margin: 440px;*/
+    margin: 0;
+    border: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font to use */
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    color: white; 
+    background-attachment: fixed; 
+  }
+
+
+
+  #background-light {
+    position: absolute;
+    width: 907px;
+    height: 1055px;
+    top: 0px;
+    right: 0px;
+  }
+
+  .logo {
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    left: 30px;
+  }
+
+  /* all search design */
+  .search {
+    position: absolute;
+    width:560px;
+    height: 45px;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff26;
+    border-radius: 16px;
+    opacity: 0.9;
+    padding:10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .search #search-text {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  .search #search-icon {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: none;
+    cursor: pointer;
+  }
+
+  .search #search-icon img {
+    width: 40px;
+  }
+
+  /* all movie-of-the-day design */
+  .movie-of-the-day {
+    display: flex;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    top: 120px;
+    left: 15px;
+  }
+
+  .movie-of-the-day .movie-img {
+    width: 392px;
+    height: 584px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 24px;
+  }
+
+  .movie-of-the-day .movie-info {
+    display: flex;
+    flex-direction: column;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    margin-top: 3vh;
+    margin-left: 2vh;
+  }
+
+  .movie-of-the-day .movie-info #movie-of-the-day {
+    font-size: 30px;
+  }
+
+  .movie-of-the-day .movie-info #movie-title {
+    font-size: 40px;
+    background: linear-gradient(90deg, rgb(221.5, 36.49, 17.39) 0%, rgb(117.83, 19.84, 142.33) 100%);
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .movie-of-the-day .movie-info p .director {
+    font-size: 26px;
+  }
+
+  .movie-of-the-day .movie-info p .release-date {
+    font-size: 24px;
+  }
+
+  /* popular secion design */
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-movies {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 735px;
+    left: 30px;
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+  }
+
+  .popular-movies .popular {
+    font-size: 28px;
+    margin-bottom: 4vh;
+  }
+
+  .movies-container-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling for the wrapper */
+    width: 100%;
+  }
+
+  .popular-movies #popular-movies-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+  }
+
+  /* genre section design */
+  .genre-movies {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 1700px;
+    left: 30px;
+    margin-top: 5vh;
+  }
+
+  .genre-bar {
+    position: relative;
+    width: 97.5%;
+    height: 96px;
+    margin-bottom: 3vh;
+    /* background: #1e1e1e; */
+    background: none;
+    /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3); */
+    border-radius: 24px;
+    font-size: 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .genre-bar .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(117.83, 19.84, 142.33, 0) 0%, rgb(117.83, 19.84, 142.33) 100%);
+    width: 16.66%;
+    border-radius: 24px;
+    transition: all .5s ease 0s;
+  }
+
+  .genre-bar button {
+    border: none;
+    color: white;
+    background: none;
+    cursor: pointer;
+    font-size: 27px;
+    line-height: 90px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .genre-bar button.active,
+  .genre-bar button:hover {
+    color: linear-gradient(180deg, rgba(117.83, 19.84, 142.33, 0) 0%, rgb(117.83, 19.84, 142.33) 100%);
+  }
+
+  .genre-bar button:nth-child(1) {
+    width: 16.66%;
+  }
+  .genre-bar .start-action,button:nth-child(1):hover~.animation {
+    width: 16.66%;
+    left: 0;
+  }
+
+  .genre-bar button:nth-child(2) {
+    width: 16.66%;
+  } 
+  .genre-bar .start-comedy,button:nth-child(2):hover~.animation {
+    width: 16.66%;
+    left: 16.66%;
+  }
+
+  .genre-bar button:nth-child(3) {
+    width: 16.66%;
+  }
+  .genre-bar .start-drama,button:nth-child(3):hover~.animation {
+    width: 16.66%;
+    left: 33.32%;
+  }
+
+  .genre-bar button:nth-child(4) {
+    width: 16.66%;
+  }
+  .genre-bar .start-romance,button:nth-child(4):hover~.animation {
+    width: 16.66%;
+    left: 49.98%;
+  }
+
+  .genre-bar button:nth-child(5) {
+    width: 16.66%;
+  }
+  .genre-bar .start-adventure,button:nth-child(5):hover~.animation {
+    width: 16.66%;
+    left: 66.64%;
+  }
+
+  .genre-bar button:nth-child(6) {
+    width: 16.66%;
+  }
+  .genre-bar .start-mystery,button:nth-child(6):hover~.animation {
+    width: 16.66%;
+    left: 83.30%;
+  }
+
+  #action #comedy #drama #romance #adventure #mystery {
+    width: 16.66%;
+  }
+
+
+
+  /* linear-gradient(180deg, rgba(117.83, 19.84, 142.33, 0) 0%, rgb(117.83, 19.84, 142.33) 100%) */
+
+  .genre-movies .genre {
+    font-size: 28px;
+    margin-bottom: 4vh;
+  }
+
+
+
+  .genre-movies #genre-movies-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    opacity: 0;
+    min-height: 55vh;
+    min-width: 97vw;
+    transition: opacity 0.5s ease;
+    transition: min-height 0.5s ease; /* Add a smooth transition for height changes */
+  }
+
+  .popular-movies #popular-movies-container .movie-card,
+  .genre-movies #genre-movies-container .movie-card {
+    flex: 0 0 calc(16.666% - 24px);
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* all movie-card design */
+  .movie-card {
+    display: flex;
+    flex-direction:column;
+    left: 0px;
+    top: 0px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    width: 196px;
+  }
+
+  .movie-card .movie-img {
+    width: 196px;
+    height: 292px;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 24px;
+  }
+
+  .movie-card .movie-title {
+    font-size: 20px;  
+  }
+
+  .movie-card .director {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+
+  .movie-card .release-date {
+    font-size: 8px;
+  }
+
+  /* For screens with a width up to 1326 */
+  @media (max-width: 1325px) {
+    .genre-movies {
+      top: 2150px;
+      left: 30px;
+    }
+  }
+
+  
