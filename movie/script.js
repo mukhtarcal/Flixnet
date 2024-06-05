@@ -162,11 +162,12 @@ function formatDateToEnglish(inputDate) {
 
 
 async function scrapeDopebox(movieTitle, movieDate) {
-    const movieName = encodeURIComponent(movieTitle.toLowerCase());
+    const movieName = movieTitle.toLowerCase().replace(/\s+/g, '-');
     const url = `https://dopebox.to/search/${movieName}`;
     const year = movieDate.split('-')[0];
     const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
   
+    /* 
     try {
       const response = await axios.get(corsAnywhereUrl + url);
       const $ = cheerio.load(response.data);
@@ -188,6 +189,9 @@ async function scrapeDopebox(movieTitle, movieDate) {
       console.error('Error fetching the webpage:', error.message);
       return null;
     }
+    */
+
+    return url;
   }
           
 async function displaySelectedMovie(movieId) {

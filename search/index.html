@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/search/style.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="/images/F-logo.png">
+    <link rel="icon" href="../images/F-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jockey+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <a href="/index.html" class="logo"><img src ="/images/FLIXNETlogo.png"></a>
-    <img id="background-light" src="/images/Vector-background.png">
+    <a href="../index.html" class="logo"><img src="../images/FLIXNETlogo.png"></a>
+    <img id="background-light" src="../images/Vector-background.png">
     <div class="search">
-      <button id="search-icon" type="submit"><img src="/images/Search-icon.png"/></button>
+      <a href="index.html">
+        <button id="search-icon" type="submit"><img src="../images/Search-icon.png"/></button>
+      </a>
       <input id="search-text" type="text" placeholder="Search movies..."/>
     </div>
 
-   <div id="search-results">
+    <div id="search-results">
+      <!-- Search results will be populated here -->
+    </div>
 
-    <!-- example
-      <button class="movie-card">
-      <img class="movie-img" src="/images/example-poster.png">
-      <div class="movie-title">Movie Title</div>
-      <p class="movie-info">
-        <span class="director">Director Name<br /></span> 
-        <span class="release-date">Release Date</span>
-      </p>
-    </button>
-   -->
-
-  </div>
-
-    <script src="/search/script.js"></script>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
