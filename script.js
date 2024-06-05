@@ -6,7 +6,7 @@ async function search() {
     if (searchText !== '') {
         // Constructing the URL with search query parameters
         const paramsString = `?query=${encodeURIComponent(searchText)}`;
-        const newUrl = `http://127.0.0.1:5500/search/index.html${paramsString}`;
+        const newUrl = `/search/index.html${paramsString}`;
 
         // Redirect to the new URL
         window.location.href = newUrl;
@@ -31,7 +31,7 @@ document.getElementById('search-text').addEventListener('keypress', async (e) =>
 async function handleMovieSelection(movieId) {
     if (movieId) {
         const paramsString = `?query=${movieId}`;
-        const newUrl = `http://127.0.0.1:5500/movie/index.html${paramsString}`;
+        const newUrl = `/movie/index.html${paramsString}`;
         window.location.href = newUrl;
     }
 }
