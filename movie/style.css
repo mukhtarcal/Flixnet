@@ -27,6 +27,11 @@ body {
     left: 30px;
   }
 
+  .logo:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
+  }
+
   /* all search design */
   .search {
     position: absolute;
@@ -63,6 +68,11 @@ body {
     height: 60px;
     background: none;
     cursor: pointer;
+  }
+
+  #search-icon:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
   }
 
   .search #search-icon img {
@@ -133,6 +143,10 @@ body {
     font-size: 20px;
   }
 
+  .movie:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
+  }
 
   /* related secion design */
   .related-movies {
@@ -195,5 +209,10 @@ body {
 
   .movie-card .release-date {
     font-size: 8px;
+  }
+
+  .movie-card:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
   }
   

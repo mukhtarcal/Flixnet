@@ -27,6 +27,11 @@ body {
     left: 30px;
   }
 
+  .logo:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
+  }
+
   /* all search design */
   .search {
     position: absolute;
@@ -69,6 +74,10 @@ body {
     width: 40px;
   }
 
+  #search-icon:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
+  }
 
   /* all movie-card design */
   #search-results {
@@ -120,5 +129,10 @@ body {
 
   .movie-card .release-date {
     font-size: 8px;
+  }
+
+  .movie-card:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
   }
   

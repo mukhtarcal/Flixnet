@@ -16,7 +16,9 @@ async function search() {
 }
 
 // Event listener for search button click
-document.getElementById('search-icon').addEventListener('click', search)
+document.getElementById('search-icon').addEventListener('click', () => {
+    search();
+})
 
 // works for the keypress enter
 document.getElementById('search-text').addEventListener('keypress', async (e) => {

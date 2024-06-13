@@ -31,6 +31,11 @@ body {
     left: 30px;
   }
 
+  .logo:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
+  }
+
   /* all search design */
   .search {
     position: absolute;
@@ -69,6 +74,11 @@ body {
     cursor: pointer;
   }
 
+  #search-icon:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
+  }
+
   .search #search-icon img {
     width: 40px;
   }
@@ -84,6 +94,11 @@ body {
     margin-bottom: 3vh;
     top: 120px;
     left: 15px;
+  }
+
+  .movie-of-the-day:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
   }
 
   .movie-of-the-day .movie-img {
@@ -336,6 +351,11 @@ body {
 
   .movie-card .release-date {
     font-size: 8px;
+  }
+
+  .movie-card:hover {
+    transform: scale(1.02); 
+    transition: transform 0.3s ease;
   }
 
   /* For screens with a width up to 1326 */
