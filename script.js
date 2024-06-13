@@ -7,8 +7,7 @@ async function search() {
         // Constructing the URL with search query parameters
         const paramsString = `?query=${encodeURIComponent(searchText)}`;
         const newUrl = `/search/index.html${paramsString}`;
-
-        // Redirect to the new URL
+        console.log(newUrl)
         window.location.href = newUrl;
     } else {
         // Handle empty search text or provide a default behavior
@@ -16,9 +15,10 @@ async function search() {
 }
 
 // Event listener for search button click
-document.getElementById('search-icon').addEventListener('click', () => {
+document.getElementById('search-icon').addEventListener('click', (event) => {
+    event.preventDefault();
     search();
-})
+});
 
 // works for the keypress enter
 document.getElementById('search-text').addEventListener('keypress', async (e) => {
