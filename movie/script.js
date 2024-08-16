@@ -128,10 +128,12 @@ async function generateSelectedMovie(movieId) {
                 <p id="cast">
                     ${movieCast}
                 </p>
-                <a href="#" id="watch-link">Watch Now</a>
             </div>
         </div>
         `;
+
+        // removing the watch feature 
+        // <a href="#" id="watch-link">Watch Now</a> was after the last </p> above
 
         return selectedMovieHTML;
 }
@@ -205,7 +207,8 @@ async function movieInit() {
     const movieId = urlParams.get('query'); // get id from url
     await displaySelectedMovie(movieId);
     await displaySimilarMovies(movieId);
-    watchNow();
+    // removing the watch feature
+    // watchNow();
     attachEventListeners();
 }
 
@@ -219,6 +222,8 @@ function attachEventListeners() {
     });
 }
 
+// removing the watch feature
+/*
 function watchNow() {
     const watchNowLink = document.getElementById('watch-link');
     watchNowLink.addEventListener('click', async () => {
@@ -226,6 +231,7 @@ function watchNow() {
     const movieTitle = selectedMovie.getAttribute('data-movie-title');
     const releaseDate = selectedMovie.getAttribute('data-release-date');
     
+
     const playButtonLink = await scrapeDopebox(movieTitle, releaseDate);
     console.log(playButtonLink);
     if (playButtonLink) {
@@ -235,6 +241,6 @@ function watchNow() {
     }
     });
 }
-        
+*/
 
 movieInit();
